@@ -1,0 +1,87 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    &:hover {
+        .dropdown--content {
+            display: flex;
+            animation: dropdown-show 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    }
+    .dropdown--link {
+        padding: 0 15px;
+    }
+    .dropdown--content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        top: 150%;
+        left: 0;
+        max-width: 1260px;
+        padding: 0.5rem 0;
+        margin: 0.125rem 0 0;
+        z-index: 1;
+        color: #737491;
+        text-align: left;
+        background-clip: padding-box;
+        border-radius: 0.75rem;
+        box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04);
+        overflow: hidden;
+        .dropdown--column--img {
+            img {
+                height: 100%;
+                width: 240px;
+                margin-right: 0.75rem;
+            }
+        }
+        .dropdown--column {
+            padding: 1.5rem 0.75rem;
+            width: 100%;
+            .nav--link {
+                padding-top: 6.8px!important;
+                padding-bottom: 6.8px!important;
+                display: block;
+            }
+            .dropdown--header {
+                line-height: 22.4px;
+                padding: 0 0 0.6375rem;
+                border-bottom: 1px solid #e9e9f2;
+                padding-bottom: 0.5rem !important;
+                margin-bottom: 0.25rem !important;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            .dropdown--item {
+                position: relative;
+                display: block;
+                padding: 0.425rem 1.3rem !important;
+                color: #5a5b75;
+                background-color: transparent;
+                transition: all 0.25s ease-in-out;
+                font-weight: 400;
+                font-size: 0.875rem;
+                text-decoration: none;
+                width: 100%;
+                &:hover {
+                    color: #766df4;
+                    text-decoration: none;
+                    background-color: transparent;
+                }
+            }
+            .dropdown--divider {
+                height: 0;
+                margin: 0.25rem 0;
+                overflow: hidden;
+                border-top: 1px solid #e9e9f2;
+            }
+        }
+
+        li {
+            list-style: none;
+            // padding: 6.8px 0 !important;
+            a {
+                font-size: 0.875rem !important;
+                padding: 0 !important;
+            }
+        }
+    }
+}

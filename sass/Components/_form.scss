@@ -1,0 +1,36 @@
+.form--field {
+    position: relative;
+    .form--icon {
+        position: absolute;
+        top: 8px;
+        left: 20px;
+        // color: #737491;
+    }
+}
+
+.form--control {
+    padding: 0.5625rem 2.595rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: $fw-400;
+    line-height: 1.5;
+    color: $color-gray;
+    background-color: #fff;
+    margin-bottom: 1.25rem;
+    border: 1px solid #dfdfeb;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 0 0 transparent;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    &:focus {
+        // color: #737491;
+        // background-color: #fff;
+        border-color: rgba(118, 109, 244, 0.35);
+        outline: 0;
+        box-shadow: 0 0 0 0 transparent, 0 0.375rem 0.625rem -0.3125rem rgba(118, 109, 244, 0.15);
+    }
+}
+::placeholder {
+    font-weight: $fw-400;
+    // color: #737491;
+    opacity: 0.7;
+}

@@ -1,0 +1,90 @@
+.intro {
+    position: relative;
+    left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: $color-secondary;
+    padding: $pd-96 0;
+    z-index: -1;
+    &__main {
+        min-height: 566px;
+        display: flex;
+        &__left {
+            display: flex;
+            flex-grow: 4;
+            align-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            text-align: left;
+            margin-top: -6rem !important;
+            margin-bottom: 0;
+            h2 {
+                font-weight: $fw-600;
+                font-size: $fs-5;
+                line-height: $line-height-0;
+                margin-bottom: $mg-5;
+            }
+            p {
+                margin-bottom: $mg-6;
+                padding: 0 0 $pd-0;
+            }
+            .intro__video {
+                display: flex;
+                align-content: center;
+                align-items: center;
+                .intro__btn {
+                    background-color: $color-primary;
+                    color: $color-white;
+                    box-shadow: none !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 5.625rem;
+                    height: 5.625rem;
+                    padding-left: 0.125rem;
+                    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                    border-radius: 50%;
+                    margin-right: $mg-2 !important;
+                }
+                span {
+                    font-size: $fs-0 !important;
+                    color: $color-gray-2 !important;
+                    margin-left: $mg-0 !important;
+                }
+            }
+        }
+        &__right {
+            flex: 0 0 58.3333333333%;
+            .intro__parallax {
+                position: relative;
+                .intro__parallax__layer {
+                    width: 100%;
+                    img {
+                        // max-width: 100%;
+                        height: auto;
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .shape svg {
+        z-index: -1;
+        display: block;
+        width: calc(100% + 1.3px);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .shape-bottom {
+        bottom: -1px;
+        color: #fff;
+        transform: rotate(180deg);
+    }
+}

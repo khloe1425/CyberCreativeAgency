@@ -1,0 +1,37 @@
+.header {
+    padding: $pd-2 15px;
+    .header__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .header__brand {
+            height: auto;
+            font-weight: 500;
+            padding:0 $pd-0 0 0;
+            margin: 0 $mg-8 0 0;
+            line-height: inherit;
+            white-space: nowrap;
+        }
+        .header__logo {
+            max-height: 3.44rem;
+            width: auto;
+            height: auto;
+            vertical-align: middle;
+        }
+        .header__signin {
+            margin-left: auto;
+        }
+    }
+}
+
+.navbar--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: linear .1s;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.625rem -0.1875rem rgba(0,0,0,.1);
+    z-index: 1030;
+}

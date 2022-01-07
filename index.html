@@ -1,36 +1,1219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>CyberAgency</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWSOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Cyber Agency</title>
 </head>
+
 <body>
     <!-- HEADER  -->
-    <div class="header"></div>
-    
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <a class="header__brand" href="/index.html">
+                    <img width="306" height="110" class="header__logo" src="./img/logo-dark.png" alt="logo">
+                </a>
+
+                <nav>
+                    <ul class="nav">
+                        <li class="nav--item dropdown">
+                            <a" class="nav--link" href="#">Demos</a>
+                                <div class="dropdown--content mw--750 p--0 ">
+                                    <div class="dropdown--column--img">
+                                        <img src="./img/menu-banner.jpg" alt="">
+                                    </div>
+                                    <div class="dropdown--column ">
+                                        <ul>
+                                            <li><a class="nav--link" href="">Web Template Presentation</a></li>
+                                            <li><a class="nav--link" href="">Business Consulting</a></li>
+                                            <li><a class="nav--link" href="">Demo Shop Homepage</a></li>
+                                            <li><a class="nav--link" href="">Creative Agency</a></li>
+                                            <li><a class="nav--link" href="">Web Studio</a></li>
+                                            <li><a class="nav--link" href="">Product Landing – Software</a></li>
+                                            <li><a class="nav--link" href="">Product Landing – Gadgets</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="dropdown--column">
+                                        <ul>
+                                            <li><a class="nav--link" href="">Mobile App Showcase</a></li>
+                                            <li><a class="nav--link" href="">Coworking Space</a></li>
+                                            <li><a class="nav--link" href="">Event Landing</a></li>
+                                            <li><a class="nav--link" href="">Digital Marketing & SEO</a></li>
+                                            <li><a class="nav--link" href="">Food Blog</a></li>
+                                            <li><a class="nav--link" href="">Personal Portfolio</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </li>
+
+                        <li class="nav--item dropdown">
+                            <a" class="nav--link" href="#">Templates</a>
+                                <div class="dropdown--content dropdown--link mw--750 py--0 px--1">
+                                    <div class="dropdown--column">
+                                        <h3 class="dropdown--header">Blog</h3>
+                                        <ul>
+                                            <li><a class="nav--link" href="">Grid Right Sidebar</a></li>
+                                            <li><a class="nav--link" href="">Grid Left Sidebar</a></li>
+                                            <li><a class="nav--link" href="">Grid No Sidebar</a></li>
+                                            <li><a class="nav--link" href="">List Right Sidebar</a></li>
+                                            <li><a class="nav--link" href="">List Left Sidebar</a></li>
+                                            <li><a class="nav--link" href="">List No Sidebar</a></li>
+                                            <li><a class="nav--link" href="">Single Post Right Sidebar</a></li>
+                                            <li><a class="nav--link" href="">Single Post Left Sidebar</a></li>
+                                            <li><a class="nav--link" href="">Single Post No Sidebar</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown--column">
+                                        <h3 class="dropdown--header">Portfolio</h3>
+                                        <ul>
+                                            <li><a class="nav--link" href="">Grid Style 1</a></li>
+                                            <li><a class="nav--link" href="">Grid Style 2</a></li>
+                                            <li><a class="nav--link" href="">Grid Style 3</a></li>
+                                            <li><a class="nav--link" href="">Project Side Gallery (Grid)</a></li>
+                                            <li><a class="nav--link" href="">Project Side Gallery (List)</a></li>
+                                            <li><a class="nav--link" href="">Project Carousel</a></li>
+                                            <li><a class="nav--link" href="">Project Wide Gallery</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown--column">
+                                        <h3 class="dropdown--header">Shop</h3>
+                                        <ul>
+                                            <li><a class="nav--link" href="">Grid Left Sidebar</a></li>
+                                            <li><a class="nav--link" href="">Grid Right Sidebar</a></li>
+                                            <li><a class="nav--link" href="">Grid No Sidebar</a></li>
+                                            <li><a class="nav--link" href="">Single Product</a></li>
+                                            <li><a class="nav--link" href="">Cart</a></li>
+                                            <li><a class="nav--link" href="">Checkout</a></li>
+                                            <li><a class="nav--link" href="">Order Tracking</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="nav--item dropdown">
+                            <a" class="nav--link" href="#">Account</a>
+                                <div class="dropdown--content mw--200 ">
+                                    <div class="dropdown--column p--0">
+                                        <ul>
+                                            <li><a class="dropdown--item" href="">Dashboard</a></li>
+                                            <li><a class="dropdown--item" href="">Account Settings</a></li>
+                                            <li><a class="dropdown--item" href="">Sign In-Illustration</a></li>
+                                            <li><a class="dropdown--item" href="">Sign In – Image</a></li>
+                                            <li><a class="dropdown--item" href="">Sign In – Sign Up</a></li>
+                                            <li><a class="dropdown--item" href="">List No Sidebar</a></li>
+                                            <li><a class="dropdown--item" href="">Password Recovery</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="nav--item dropdown">
+                            <a" class="nav--link" href="#">Pages</a>
+                                <div class="dropdown--content mw--200 ">
+                                    <div class="dropdown--column p--0">
+                                        <ul>
+                                            <li><a class="dropdown--item" href="">About</a></li>
+                                            <li><a class="dropdown--item" href="">Contacts</a></li>
+                                            <li><a class="dropdown--item" href="">Help Center</a></li>
+                                            <li><a class="dropdown--item" href="">404 Not Found</a></li>
+                                            <li><a class="dropdown--item" href="">Coming Soon</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="nav--item dropdown">
+                            <a" class="nav--link" href="#">Docs / Support</a>
+                                <div class="dropdown--content mw--205 ">
+                                    <div class="dropdown--column p--0">
+                                        <ul>
+                                            <li>
+                                                <a class="dropdown--item" href="#">
+                                                    <div class="d--flex align--items--center">
+                                                        <i data-feather="file-text" width="18" height="18"></i>
+                                                        <div class="pl--2">Documentation
+                                                            <small class="d--block">
+                                                                Kick-start customization
+                                                            </small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown--divider"></div>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown--item" href="#">
+                                                    <div class="d--flex align--items--center">
+                                                        <i data-feather="layers" width="18" height="18"></i>
+                                                        <div class="pl--2">Contacts
+                                                            <small class="d--block">
+                                                                Trial before Purchase
+                                                            </small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown--divider"></div>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown--item" href="#">
+                                                    <div class="d--flex align--items--center">
+                                                        <i data-feather="edit" width="18" height="18"></i>
+                                                        <div class="pl--2">Help Center
+                                                            <small class="d--block">
+                                                                Regular updates
+                                                            </small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown--divider"></div>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown--item" href="#">
+                                                    <div class="d--flex align--items--center">
+                                                        <i data-feather="life-buoy" width="18" height="18"></i>
+                                                        <div class="pl--2">404 Not Found
+                                                            <small class="d--block">
+                                                                Get Help from Our Team
+                                                            </small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Trigger/Open The Modal -->
+                <nav class="header__signin">
+                    <ul class="nav">
+                        <li class="myBtn_multi btn nav--link--style">
+                            <a" class="nav--signin" href="#">
+                                <i data-feather="user" width="18" height="18"></i>
+                                </a>
+                                Sign in
+                        </li>
+
+                        <li class="myBtn_multi btn btn--primary">
+                            <a href="#"></a>Sign up
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- The Modal Sign In-->
+                <div class="modal modal_multi">
+
+                    <!-- Modal content -->
+                    <div class="modal__content">
+                        <div class="modal__header">
+                            <span class="close close_multi">&times;</span>
+                            <h4>Sign in</h4>
+                        </div>
+                        <div class="modal__body">
+                            <p class="font--size--ms text--muted">Sign in to your account using email and password
+                                provided during registration.</p>
+                            <div class="modal__form">
+                                <form action="">
+                                    <div class="form--field">
+                                        <i class="form--icon" data-feather="mail" width="16"></i>
+                                        <input class="form--control" type="text" id="filed-1" placeholder="Email">
+                                    </div>
+                                    <div class="form--field">
+                                        <i class="form--icon" data-feather="lock" width="16"></i>
+                                        <input class="form--control" type="password" id="filed-2"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="modal__forget__password">
+                                        <div class="custom--control">
+                                            <input class="input--checkbox" name="rememberme" type="checkbox"
+                                                id="remember-me">
+                                            <label class="custom--control--label" for="remember-me"> Keep me signed in
+                                            </label>
+                                        </div>
+
+                                        <div>
+                                            <span>
+                                                <a class="modal__forget__password__link font--size--ms" href="#">Forgot
+                                                    password?</a>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn--primary btn--100">Sign in</button>
+
+                                </form>
+                                <p class="modal__register__text font--size--sm">Don't have an account?
+                                    <a href="#">Sign up</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- The Modal Sign Up-->
+                <div class="modal modal_multi">
+
+                    <!-- Modal content -->
+                    <div id="modal-signup-view" class="modal__content">
+                        <div class="modal__header">
+                            <span class="close close_multi">&times;</span>
+                            <h4>Sign up</h4>
+                        </div>
+                        <div class="modal__body">
+                            <p class="font--size--ms text--muted">
+                                Registration takes less than a minute but gives you full control over your orders.
+                            </p>
+                            <div class="modal__form">
+                                <form action="">
+                                    <div class="form--field">
+                                        <i class="form--icon" data-feather="mail" width="16"></i>
+                                        <input class="form--control" type="text" id="filed-1" placeholder="Email">
+                                    </div>
+                                    <div class="form--field">
+                                        <i class="form--icon" data-feather="lock" width="16"></i>
+                                        <input class="form--control" type="password" id="filed-2"
+                                            placeholder="Password">
+                                    </div>
+
+                                    <p class="modal__privacy__text font--size--sm ">
+                                        Your personal data will be used to support your experience throughout this
+                                        website, to manage access to your account, and for other purposes described in
+                                        our
+                                        <a href="#" class="" target="_blank">
+                                            privacy policy
+                                        </a>.
+                                    </p>
+
+                                    <button type="submit" class="btn btn--primary btn--100">Sign up</button>
+
+                                </form>
+                                <p class="modal__register__text font--size--sm">Already have an account?
+                                    <a href="#">Sign in</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="intro__main container">
+            <div class="intro__main__left">
+                <h2 class="intro__title">Creativity beyond imagination</h2>
+                <p class="intro__desc">We will help to bring your wildest ideas to life.</p>
+                <div class="intro__video">
+                    <a class="intro__btn" href="#">
+                        <i data-feather="play"></i>
+                    </a>
+                    <span>Watch who, how and where </span>
+                </div>
+            </div>
+            <div class="intro__main__right">
+                <!-- Parallax.js -->
+                <div id="intro__parallax" class="intro__parallax">
+                    <div class="intro__parallax__layer" data-depth="0.35"><img src="./img/intro/layer02.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.1"><img src="./img/intro/layer01.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.2"><img src="./img/intro/layer03.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.5"><img src="./img/intro/layer04.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.6"><img src="./img/intro/layer05.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.4"><img src="./img/intro/layer06.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.25"><img src="./img/intro/layer07.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.35"><img src="./img/intro/layer08.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.6"><img src="./img/intro/layer09.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.45"><img src="./img/intro/layer10.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.7"><img src="./img/intro/layer11.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.13"><img src="./img/intro/layer12.svg"></div>
+                    <div class="intro__parallax__layer" data-depth="0.5"><img src="./img/intro/layer13.png"></div>
+                    <div class="intro__parallax__layer" data-depth="0.9"><img src="./img/intro/layer14.svg"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="intro__shape shape shape-bottom" data-negative="false">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+                <path fill="currentColor" d="M3000,185.4V0H0v185.4C496.4,69.8,996.4,12,1500,12S2503.6,69.8,3000,185.4z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
     <!-- ABOUT US  -->
-    <div class="about"></div>
-    
+    <section class="about">
+        <div class="about__main container">
+            <div class="about__left">
+                <div class="about__title">
+                    <p>Something</p>
+                    <span>About Us</span>
+                </div>
+            </div>
+            <div class="about__right">
+                <p>Find aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum beatae vitae dicta sunt explicabo.</p>
+                <p>Ornare aenean euismod elementum nisi quis. Et ultrices neque ornare aenean euismod elementum nisi.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- OUT WORK  -->
-    <div class="work"></div>
-    
+    <section class="work">
+        <div class="work__main container">
+            <h2 class="heading-title">Our Work</h2>
+            <div class="work__filter">
+
+                <ul class="nav button-group" id="filters">
+                    <li class="nav--item " data-filter="*">
+                        <a" class="nav--link is-checked" href="#">All</a>
+                    </li>
+                    <li class="nav--item" data-filter=".3D">
+                        <a" class="nav--link" href="#">3D Modelling</a>
+                    </li>
+                    <li class="nav--item" data-filter="*">
+                        <a" class="nav--link" href="#">Packaging</a>
+                    </li>
+                    <li class="nav--item" data-filter=".Branding">
+                        <a" class="nav--link" href="#">Branding</a>
+                    </li>
+                    <li class="nav--item" data-filter=".Stationery">
+                        <a" class="nav--link" href="#">Stationery</a>
+                    </li>
+                </ul>
+
+                <div class="work__masonry">
+                    <!-- Isotope JS-->
+                    <div class="grid">
+                        <div class="grid-sizer grid-item 3D height2">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/our-work/07-2.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3 class="">Toothbrush Render</h3>
+                                        <p class="font-size-sm">3D Modelling</p>
+                                        <span class="btn btn--sm btn--primary">View project</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-sizer grid-item metal ">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/our-work/08-2.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3 class="">Hand Cream Bottle</h3>
+                                        <p class="font-size-sm">Package Design</p>
+                                        <span class="btn btn--sm btn--primary">View project</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-sizer grid-item 3D height2">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/our-work/09-2.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3 class="">Clay Glass Render</h3>
+                                        <p class="font-size-sm">3D Modelling</p>
+                                        <span class="btn btn--sm btn--primary">View project</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-sizer grid-item Branding Stationery">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/our-work/10-1.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3 class="">Promo Flyer Design</h3>
+                                        <p class="font-size-sm">Stationary</p>
+                                        <span class="btn btn--sm btn--primary">View project</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-sizer grid-item 3D height2">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/our-work/12-1.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3 class="">Tonic Bottle Design</h3>
+                                        <p class="font-size-sm">Package Design</p>
+                                        <span class="btn btn--sm btn--primary">View project</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="grid-sizer grid-item transition height2">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/our-work/14-1.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3 class="">Cosmetics Packaging</h3>
+                                        <p class="font-size-sm">Package Design</p>
+                                        <span class="btn btn--sm btn--primary">View project</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-sizer grid-item Branding ">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/our-work/11-1.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3 class="">Company Branding</h3>
+                                        <p class="font-size-sm">Identity Design</p>
+                                        <span class="btn btn--sm btn--primary">View project</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-sizer grid-item Branding ">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/our-work/13-1.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3 class="">Package Branding</h3>
+                                        <p class="font-size-sm">Identity Design</p>
+                                        <span class="btn btn--sm btn--primary">View project</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="btn btn--primary" href="#">See More Projects</span>
+
+        </div>
+    </section>
+
     <!-- OUT TEAM  -->
-    <div class="team"></div>
-    
+    <section class="team">
+        <div class="team__main container">
+            <h2 class="heading-title">Our Team</h2>
+            <div class="team__galerry">
+                <figure class="team__card">
+                    <div class="team__img">
+                        <img src="./img/team/09-1.jpg" alt="">
+                        <figcaption class="team__overlay">
+                            <h3 class="">Sarah Paulson</h3>
+                            <p class="">CEO, Co-Founder</p>
+                            <div>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="team__card">
+                    <div class="team__img">
+                        <img src="./img/team/10.jpg" alt="">
+                        <figcaption class="team__overlay">
+                            <h3 class="">Tim Brooks</h3>
+                            <p class="">Lead Developer</p>
+                            <div>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="team__card">
+                    <div class="team__img">
+                        <img src="./img/team/11.jpg" alt="">
+                        <figcaption class="team__overlay">
+                            <h3 class="">Emma Brown</h3>
+                            <p class="">Lead Designer</p>
+                            <div>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="team__card">
+                    <div class="team__img">
+                        <img src="./img/team/12.jpg" alt="">
+                        <figcaption class="team__overlay">
+                            <h3 class="">Lisa Clarks</h3>
+                            <p class="">Marketing Director</p>
+                            <div>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+
+            </div>
+            <div class="team__galerry">
+                <figure class="team__card">
+                    <div class="team__img">
+                        <img src="./img/team/13.jpg" alt="">
+                        <figcaption class="team__overlay">
+                            <h3 class="">Jessica Chew</h3>
+                            <p class="">Marketing Specialist</p>
+                            <div>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="team__card">
+                    <div class="team__img">
+                        <img src="./img/team/14.jpg" alt="">
+                        <figcaption class="team__overlay">
+                            <h3 class="">Sanomi Smith</h3>
+                            <p class="">UI/UX Designer</p>
+                            <div>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="team__card">
+                    <div class="team__img">
+                        <img src="./img/team/15.jpg" alt="">
+                        <figcaption class="team__overlay">
+                            <h3 class="">Barbara Edwards</h3>
+                            <p class="">Content Manager</p>
+                            <div>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="team__card">
+                    <div class="team__img">
+                        <img src="./img/team/16.jpg" alt="">
+                        <figcaption class="team__overlay">
+                            <h3 class="">Daniel Adams</h3>
+                            <p class="">Front-End Developer</p>
+                            <div>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
     <!-- TESTIMONIAL  -->
-    <div class="testimonial"></div>
-    
+    <section class="testimonial">
+        <div class="testimonial__main container">
+            <div class="testimonial__left swiper mySwiper2">
+                <h2 class="heading-title">What people say about us </h2>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial__blockqoute " data-background-icon="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos
+                                ducimus qui blanditiis praesentium voluptatum. <br><br>
+
+                                Mattis enim ut tellus elementum sagittis vitae et leo duis.
+                            </p>
+                            <div class="testimonial__avt">
+                                <img src="./img/testimonial/01-2.jpg" alt="">
+                                <span>Tim Brooks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial__blockqoute " data-background-icon="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos
+                                ducimus qui blanditiis praesentium voluptatum. <br><br>
+
+                                Mattis enim ut tellus elementum sagittis vitae et leo duis.
+                            </p>
+                            <div class="testimonial__avt">
+                                <img src="./img/testimonial/02-2.jpg" alt="">
+                                <span>Tim Brooks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial__blockqoute " data-background-icon="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos
+                                ducimus qui blanditiis praesentium voluptatum. <br><br>
+
+                                Mattis enim ut tellus elementum sagittis vitae et leo duis.
+                            </p>
+                            <div class="testimonial__avt">
+                                <img src="./img/testimonial/03-1.jpg" alt="">
+                                <span>Tim Brooks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial__blockqoute " data-background-icon="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos
+                                ducimus qui blanditiis praesentium voluptatum. <br><br>
+
+                                Mattis enim ut tellus elementum sagittis vitae et leo duis.
+                            </p>
+                            <div class="testimonial__avt">
+                                <img src="./img/testimonial/04-1.jpg" alt="">
+                                <span>Tim Brooks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial__blockqoute " data-background-icon="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos
+                                ducimus qui blanditiis praesentium voluptatum. <br><br>
+
+                                Mattis enim ut tellus elementum sagittis vitae et leo duis.
+                            </p>
+                            <div class="testimonial__avt">
+                                <img src="./img/testimonial/05-1.jpg" alt="">
+                                <span>Tim Brooks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="testimonial__navi">
+                    <div class="swiper-button-next"><i data-feather="arrow-right" width="20" height="20"></i></div>
+                    <div class="swiper-button-prev"><i data-feather="arrow-left" width="20" height="20"></i></div>
+                </div>
+            </div>
+            <div thumbsSlider="" class="testimonial__right swiper mySwiper ">
+                <div class="swiper-wrapper swiper--thumbs">
+                    <div class="swiper-slide pagination-logo">
+                        <img src="./img/testimonial/airbnb-1.svg" />
+                    </div>
+                    <div class="swiper-slide pagination-logo">
+                        <img src="./img/testimonial/coinbase-1.svg" />
+                    </div>
+                    <div class="swiper-slide pagination-logo">
+                        <img src="./img/testimonial/netflix-1.svg" />
+
+                    </div>
+                    <div class="swiper-slide pagination-logo">
+                        <img src="./img/testimonial/pinterest.svg" />
+                    </div>
+                    <div class="swiper-slide pagination-logo">
+                        <img src="./img/testimonial/dribbble-1.svg" />
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- BLOG  -->
-    <div class="blog"></div>
-    
-    <!-- CONTACT  -->
-    <div class="contact"></div>
-    
+    <section class="blog">
+        <div class="blog__bg">
+            <div class="blog__shape shape shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+                    <path fill="currentColor"
+                        d="M3000,185.4V0H0v185.4C496.4,69.8,996.4,12,1500,12S2503.6,69.8,3000,185.4z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="blog__main">
+            <div class="container">
+                <h2 class="heading-title">Our Blog</h2>
+                <!-- Swiper -->
+                <div class="blog__carousel swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="blog__title" href="#">Brand Strategy</a>
+                            <a class="blog__desc" href="#">
+                                Build Complete Websites in a Fraction of Time With This Handy Tool
+                            </a>
+                            <div class="blog__avatar">
+                                <img class="rounded-circle" src="./img/blog/avt3.jpeg" alt="">
+                                <span>by <strong>Nilofer</strong></span>
+                            </div>
+                            <div class="blog__time">
+                                <i data-feather="calendar" width="17" height="17"></i>
+                                <a class="" href="">
+                                    <time datetime="2020-12-19">
+                                        Dec 19
+                                    </time>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="blog__title" href="#">Brand Strategy</a>
+                            <a class="blog__desc" href="#">
+                                Build Complete Websites in a Fraction of Time With This Handy Tool
+                            </a>
+                            <div class="blog__avatar">
+                                <img class="rounded-circle" src="./img/blog/avt2.png" alt="">
+                                <span>by <strong>Nilofer</strong></span>
+                            </div>
+                            <div class="blog__time">
+                                <i data-feather="calendar" width="17" height="17"></i>
+                                <a class="" href="">
+                                    <time datetime="2020-12-19">
+                                        Dec 19
+                                    </time>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="blog__title" href="#">Brand Strategy</a>
+                            <a class="blog__desc" href="#">
+                                Build Complete Websites in a Fraction of Time With This Handy Tool
+                            </a>
+                            <div class="blog__avatar">
+                                <img class="rounded-circle" src="./img/blog/avt1.jpeg" alt="">
+                                <span>by <strong>Nilofer</strong></span>
+                            </div>
+                            <div class="blog__time">
+                                <i data-feather="calendar" width="17" height="17"></i>
+                                <a class="" href="">
+                                    <time datetime="2020-12-19">
+                                        Dec 19
+                                    </time>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="blog__title" href="#">Brand Strategy</a>
+                            <a class="blog__desc" href="#">
+                                Build Complete Websites in a Fraction of Time With This Handy Tool
+                            </a>
+                            <div class="blog__avatar">
+                                <img class="rounded-circle" src="./img/blog/avt3.jpeg" alt="">
+                                <span>by <strong>Nilofer</strong></span>
+                            </div>
+                            <div class="blog__time">
+                                <i data-feather="calendar" width="17" height="17"></i>
+                                <a class="" href="">
+                                    <time datetime="2020-12-19">
+                                        Dec 19
+                                    </time>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="blog__title" href="#">Brand Strategy</a>
+                            <a class="blog__desc" href="#">
+                                Build Complete Websites in a Fraction of Time With This Handy Tool
+                            </a>
+                            <div class="blog__avatar">
+                                <img class="rounded-circle" src="./img/blog/avt2.png" alt="">
+                                <span>by <strong>Nilofer</strong></span>
+                            </div>
+                            <div class="blog__time">
+                                <i data-feather="calendar" width="17" height="17"></i>
+                                <a class="" href="">
+                                    <time datetime="2020-12-19">
+                                        Dec 19
+                                    </time>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="blog__title" href="#">Brand Strategy</a>
+                            <a class="blog__desc" href="#">
+                                Build Complete Websites in a Fraction of Time With This Handy Tool
+                            </a>
+                            <div class="blog__avatar">
+                                <img class="rounded-circle" src="./img/blog/avt1.jpeg" alt="">
+                                <span>by <strong>Nilofer</strong></span>
+                            </div>
+                            <div class="blog__time">
+                                <i data-feather="calendar" width="17" height="17"></i>
+                                <a class="" href="">
+                                    <time datetime="2020-12-19">
+                                        Dec 19
+                                    </time>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
     <!-- FOOTER  -->
-    <div class="footer"></div>
-    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contact">
+                <div class="footer__contact__left">
+                    <h2 class="heading-title">What project are you looking for?</h2>
+
+                    <div class="footer__contact__form">
+                        <form action="">
+                            <div class="footer__form__choice">
+                                <p>Services</p>
+                                <input type="radio" id="option-1" checked="checked" name="selector">
+                                <label for="option-1">Branding</label>
+
+                                <input type="radio" id="option-2" name="selector">
+                                <label for="option-2">UI/UX</label>
+
+                                <input type="radio" id="option-3" name="selector">
+                                <label for="option-3">Illustration</label>
+
+                                <input type="radio" id="option-4" name="selector">
+                                <label for="option-4">Motion</label>
+                            </div>
+
+                            <div class="form--field">
+                                <i class="form--icon" data-feather="user" width="16"></i>
+                                <input class="form--control" type="text" id="filed-1" placeholder="Name">
+                            </div>
+                            <div class="form--field">
+                                <i class="form--icon" data-feather="mail" width="16"></i>
+                                <input class="form--control" type="text" id="filed-2" placeholder="Email">
+                            </div>
+
+                            <textarea class="form--control" placeholder="Project description" rows="5"></textarea>
+
+                            <button type="submit" class="btn btn--primary btn--block">Send Request</button>
+
+                        </form>
+                    </div>
+
+
+                </div>
+                <div class="footer__contact__right">
+                    <h2 class="heading-title pb--2">Contacts</h2>
+                    <div class="footer__contact__menu pb--2 mb--4">
+                        <li>
+                            <a class="nav--link nav--link--style" title="contact@example.com"
+                                href="mailto:contact@example.com">contact@example.com</a>
+                        </li>
+                        <li>
+                            <a class="nav--link nav--link--style" title="+ 1 526 220 0459" href="tel:+15262200459">+ 1
+                                526 220 0459</a>
+                        </li>
+                    </div>
+                    <h3 class="pb--2">Or connect with us on:</h3>
+                    <ul class="footer__social__menu">
+                        <li>
+                            <a class="social--btn sb-facebook" title="Facebook" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Twitter" href="#" class="social--btn sb-twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Instagram" href="#" class="social--btn sb-instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Pinterest" href="#" class="social--btn sb-pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <div class="footer__copyright__content container p--0">
+                <p class="">© All rights reserved. Made by Createx Studio
+                    & MadrasThemes</p>
+                <ul id="menu-footer-menu" class="footer-links list-inline font-size-sm mb-0 order-md-2">
+                    <li>
+                        <a title="Support" href="#" class="nav--link-style nav--link--light nav--link">Support</a>
+                    </li>
+                    <li>
+                        <a title="Contacts" href="#" class="nav--link-style nav--link--light nav--link">Contacts</a>
+                    </li>
+                    <li>
+                        <a title="Terms &amp; Conditions" href="#"
+                            class="nav--link--style nav--link--light nav--link">Terms &amp; Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a id="scroll--top" class="btn--scroll--top" href="#header" data-scroll="" onclick="topFunction()">
+        <span class="btn--scroll--top--tooltip">
+            Top
+        </span>
+        <i data-feather="arrow-up" width="18" height="18"></i>
+    </a>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- PARALLAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('intro__parallax');
+        var parallax = new Parallax(scene);
+    </script>
+
+    <!-- FEATHER FONT -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- Isotope JS -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script>
+        // init Isotope
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            // layoutMode: 'masonry',
+            masonry: {
+                columnWidth: '.grid-sizer',
+                isFitWidth: true
+
+            },
+            percentPosition: true,
+        });
+
+        // filter functions
+        var filterFns = {
+            // show if number is greater than 50
+            numberGreaterThan50: function () {
+                var number = $(this).find('.number').text();
+                return parseInt(number, 10) > 50;
+            },
+            // show if name ends with -ium
+            ium: function () {
+                var name = $(this).find('.name').text();
+                return name.match(/ium$/);
+            }
+        };
+
+        // bind filter button click
+        $('#filters').on('click', 'li', function () {
+            var filterValue = $(this).attr('data-filter');
+            // use filterFn if matches value
+            filterValue = filterFns[filterValue] || filterValue;
+            $grid.isotope({ filter: filterValue });
+        });
+
+        // bind sort button click
+        $('#sorts').on('click', 'li', function () {
+            var sortByValue = $(this).attr('data-sort-by');
+            $grid.isotope({ sortBy: sortByValue });
+        });
+
+        // change is-checked class on buttons
+        $('.button-group').each(function (i, buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on('click', 'li', function () {
+                $buttonGroup.find('.is-checked').removeClass('is-checked');
+                $(this).children().addClass('is-checked');
+            });
+        });
+
+
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Testimonial
+        var swiper = new Swiper(".mySwiper", {
+            // loop: true,
+            spaceBetween: 10,
+            slidesPerView: 5,
+            direction: 'vertical'
+            // freeMode: false,
+            // watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+
+        // Initialize Blog Carousel
+        var swiper3 = new Swiper(".blog__carousel", {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            // centeredSlides: true,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 600
+        });
+    </script>
+
+    <!-- Modal -->
+    <script>
+        // Get the modal
+        var modalparent = document.getElementsByClassName("modal_multi");
+
+        // Get the button that opens the modal
+        var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+        // Get the <span> element that closes the modal
+        var span_close_multi = document.getElementsByClassName("close_multi");
+
+        // When the user clicks the button, open the modal
+        function setDataIndex() {
+
+            for (i = 0; i < modal_btn_multi.length; i++) {
+                modal_btn_multi[i].setAttribute('data-index', i);
+                modalparent[i].setAttribute('data-index', i);
+                span_close_multi[i].setAttribute('data-index', i);
+            }
+        }
+
+        for (i = 0; i < modal_btn_multi.length; i++) {
+            modal_btn_multi[i].onclick = function () {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "flex";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_close_multi[i].onclick = function () {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "none";
+            };
+
+        }
+
+        window.onload = function () {
+            setDataIndex();
+        };
+
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                modalparent[event.target.getAttribute('data-index')].style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- Main  -->
+    <script>
+        window.onscroll = function () {
+            // Sticky Header
+            var stickyHeader = document.querySelector('.header');
+
+            // Scroll to top
+            var scrollTop = document.querySelector('#scroll--top');
+
+            if (document.body.scrollTop > 320 || document.documentElement.scrollTop > 320) {
+                stickyHeader.classList.add('navbar--sticky');
+                scrollTop.classList.add('btn--show');
+            }
+            else {
+                stickyHeader.classList.remove('navbar--sticky');
+                scrollTop.classList.remove('btn--show');
+            }
+        }
+
+        // Scroll to top
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+
 </body>
+
 </html>

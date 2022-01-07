@@ -1,0 +1,73 @@
+// Colors
+$color-primary: #766df4;
+$color-primary-color: #493ef0;
+$color-secondary: #f7f7fc;
+$color-white: #fff;
+$color-gray-dark: #4a4b65;
+$color-gray: #737491;
+$color-gray-2: #9e9fb4;
+$color-gray-3: #797a95;
+$color-dark: #37384e;
+$color-dark-2: #4d4e64;
+$color-link-gray: #5a5b75;
+
+// Font size
+$fs-075: 0.75rem;
+$fs-0: 0.875rem;
+$fs-1: 1rem;
+$fs-2: 1.125rem;
+$fs-3: 1.375rem;
+$fs-4: 2rem;
+$fs-5: 3rem;
+
+// Font weight
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+
+// Line height
+$line-height-0: 1.2em;
+$line-height-1: 1.25em;
+$line-height-14: 1.4em;
+$line-height-2: 1.5em;
+
+// Margin
+$mg-0: 0.25rem;
+$mg-2: 0.5rem;
+$mg-3: 0.75rem;
+$mg-13: 0.8125rem;
+$mg-15: 0.9375rem;
+$mg-5: 1rem;
+$mg-6: 1.25rem;
+$mg-8: 1.5rem;
+$mg-30: 1.875rem;
+$mg-32: 2rem;
+$mg-40: 2.5rem;
+$mg-48: 3rem;
+
+// Padding
+$pd-0: 0.5rem;
+$pd-1: 0.5625rem;
+$pd-10: 0.625rem;
+$pd-2: 0.75rem;
+$pd-3: 0.875rem;
+$pd-15: 0.9375rem;
+$pd-4: 1rem;
+$pd-5: 1.125rem;
+$pd-6: 1.5rem;
+$pd-20: 1.25rem;
+$pd-30: 1.875rem;
+$pd-48: 3rem;
+$pd-50: 3.125rem;
+$pd-72: 4.5rem;
+$pd-80: 5rem;
+$pd-96: 6rem;
+
+
+// Break points
+$breakpoint: (
+    "xl": 1280px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px,
+);

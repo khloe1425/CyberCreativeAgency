@@ -1,0 +1,202 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+   color: #4a4b65;
+}
+
+h2 {
+   font-size: $fs-3;
+   font-weight: $fw-600;
+}
+
+h3 {
+   font-size: 1.125rem;
+}
+h4 {
+   font-size: 1.375rem;
+}
+
+body {
+   // font-family: "Inter", sans-serif !important;
+   font-family: inter, sans-serif;
+   font-size: 1rem;
+   font-weight: $fw-400;
+   line-height: $line-height-2;
+   color: $color-gray;
+   text-align: left;
+}
+.container {
+   max-width: 1260px;
+   margin: 0 auto;
+   padding: 0 $pd-4;
+   display: flex;
+   align-items: center;
+   flex-wrap: nowrap;
+}
+.font--size--ms {
+   font-size: 0.8125rem;
+}
+.font--size--sm {
+   font-size: 0.875rem;
+}
+.nav {
+   display: flex;
+   flex-direction: row;
+}
+.nav--item {
+   list-style: none;
+}
+.nav--link {
+   cursor: pointer;
+   font-size: 16px;
+   padding: 0.875rem 1.125rem;
+   transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+   color: $color-link-gray;
+   text-decoration: none;
+   &:hover {
+      color: #766df4;
+   }
+}
+.nav--link--style {
+   display: inline-block;
+   transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+   color: #5a5b75;
+   font-weight: 500;
+   text-decoration: none;
+   &:hover {
+      color: #766df4;
+   }
+}
+
+.shape {
+   overflow: hidden;
+   position: absolute;
+   left: 0;
+   width: 100%;
+   line-height: 0;
+   direction: ltr;
+}
+
+.nav--signin {
+   font-size: $fs-0;
+   display: flex;
+}
+.heading-title {
+   font-size: 32px;
+   color: $color-gray-dark;
+   font-weight: $fw-600;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+   background-color: transparent;
+   width: 100%;
+   height: 100%;
+   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+   transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+   backface-visibility: hidden;
+   border-radius: 1rem;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+   background-color: #bbb;
+   color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+   // background-color: dodgerblue;
+   color: white;
+   transform: rotateY(180deg);
+   border: 1px solid rgba(118, 109, 244, 0.35);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.rounded-circle {
+   border-radius: 50%;
+}
+// Padding
+.p--0 {
+   padding: 0 !important;
+}
+.py--0 {
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+}
+.px--0 {
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+}
+.px--1 {
+   padding: 0 $pd-15;
+}
+.pl--2 {
+   padding-left: $pd-0 !important;
+}
+.pb--2 {
+   padding-bottom: $pd-0 !important;
+}
+
+// Margin
+.mt--0 {
+   margin-top: 0 !important;
+}
+.mb--4 {
+   margin-bottom: $mg-8!important;
+}
+
+// Min width
+.mw--750 {
+   min-width: 750px;
+}
+.mw--200 {
+   min-width: 200px;
+}
+.mw--205 {
+   min-width: 205px;
+}
+
+
+// Display
+.d--flex {
+   display: flex;
+}
+.d--block {
+   display: block;
+}
+.align--items--center {
+   align-items: center;
+}
